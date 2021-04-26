@@ -17,7 +17,7 @@ object UUIDUtils {
 
     fun removeDashes(string: String) = string.replace("-", "")
 
-    fun insertDashes(string: String) = StringBuilder(string)
+    private fun insertDashes(string: String) = StringBuilder(string)
             .insert(8, '-')
             .insert(13, '-')
             .insert(18, '-')
