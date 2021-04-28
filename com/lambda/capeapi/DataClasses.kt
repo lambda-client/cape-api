@@ -1,4 +1,4 @@
-package org.kamiblue.capeapi
+package com.lambda.capeapi
 
 import com.google.gson.annotations.SerializedName
 import java.util.*

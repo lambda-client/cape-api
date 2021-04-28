@@ -1,15 +1,14 @@
-package org.kamiblue.capeapi
+package com.lambda.capeapi
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
+import com.lambda.commons.extension.synchronized
+import com.lambda.commons.utils.ConnectionUtils
 import org.apache.logging.log4j.Logger
-import org.kamiblue.commons.extension.synchronized
-import org.kamiblue.commons.utils.ConnectionUtils
 import java.io.File
 import java.io.FileWriter
 import java.util.*
-import kotlin.collections.LinkedHashMap
 
 abstract class AbstractUUIDManager(
     filePath: String,
