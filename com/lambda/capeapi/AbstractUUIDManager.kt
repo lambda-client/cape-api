@@ -17,6 +17,7 @@ abstract class AbstractUUIDManager(
 ) {
 
     private val file = File(filePath)
+
     @Suppress("DEPRECATION")
     private val parser = JsonParser()
     private val gson = GsonBuilder().setPrettyPrinting().create()

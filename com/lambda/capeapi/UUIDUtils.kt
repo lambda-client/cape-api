@@ -18,9 +18,9 @@ object UUIDUtils {
     fun removeDashes(string: String) = string.replace("-", "")
 
     private fun insertDashes(string: String) = StringBuilder(string)
-            .insert(8, '-')
-            .insert(13, '-')
-            .insert(18, '-')
-            .insert(23, '-')
-            .toString()
+        .insert(8, '-')
+        .insert(13, '-')
+        .insert(18, '-')
+        .insert(23, '-')
+        .toString()
 }

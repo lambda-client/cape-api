@@ -11,9 +11,9 @@ data class CapeUser(
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
-                || other is CapeUser
-                && other.id == this.id
-                && other.capes == capes
+            || other is CapeUser
+            && other.id == this.id
+            && other.capes == capes
     }
 
     override fun hashCode(): Int {
@@ -31,9 +31,9 @@ data class Cape(
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
-                || other is Cape
-                && other.capeUUID == capeUUID
-                && other.type == other.type
+            || other is Cape
+            && other.capeUUID == capeUUID
+            && other.type == other.type
     }
 
     override fun hashCode(): Int {
@@ -58,8 +58,8 @@ data class PlayerProfile(
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
-                || other is PlayerProfile
-                && other.uuid == uuid
+            || other is PlayerProfile
+            && other.uuid == uuid
     }
 
     override fun hashCode(): Int {
