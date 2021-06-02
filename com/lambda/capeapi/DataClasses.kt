@@ -68,11 +68,6 @@ data class PlayerProfile(
 }
 
 enum class CapeType(val realName: String, val imageKey: String, val color: CapeColor) {
-    BOOSTER("Booster", "booster", CapeColor("e68cc8", "ffa0e6")),
-    CONTEST("Contest", "contest", CapeColor("90b3ff", "3869d1")),
-    CONTRIBUTOR("Contributor", "github1", CapeColor("333333", "211f1f")),
-    DONOR("Donor", "donator2", CapeColor("9b90ff", "8778ff")),
-    INVITER("Inviter", "inviter", CapeColor("de90ff", "9c30c9")), // todo need better colors
-    SPECIAL("Special", "giveaway", CapeColor("9b90ff", "8778ff"))
+    CONTRIBUTOR("Contributor", "github", CapeColor("272727", "363636"))
 }
 
