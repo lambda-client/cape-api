@@ -43,7 +43,7 @@ abstract class AbstractUUIDManager(
     }
 
     fun getByName(name: String?) = name?.let {
-        nameProfileMap.getOrPut(name.toLowerCase()) {
+        nameProfileMap.getOrPut(name.lowercase()) {
             getOrRequest(name)?.also { profile ->
                 // If UUID already present in uuidNameMap but not in nameUuidMap (user changed name)
                 uuidNameMap[profile.uuid]?.let { nameProfileMap.remove(it.name) }
@@ -118,7 +118,7 @@ abstract class AbstractUUIDManager(
             uuidNameMap.clear()
             nameProfileMap.clear()
             uuidNameMap.putAll(cacheList.associateBy { it.uuid })
-            nameProfileMap.putAll(cacheList.associateBy { it.name.toLowerCase() })
+            nameProfileMap.putAll(cacheList.associateBy { it.name.lowercase() })
             logger.info("UUID cache loaded")
             true
         } catch (e: Exception) {
